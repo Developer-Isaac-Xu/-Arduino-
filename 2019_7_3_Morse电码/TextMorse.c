@@ -1,11 +1,10 @@
-int comechar = 0;
-int ledpin = 13;
+int led = 5;
 
 void dash()
 {
-  digitalWrite(ledpin, HIGH);
+  digitalWrite(led, HIGH);
   delay(1000);
-  digitalWrite(ledpin, LOW);
+  digitalWrite(led, LOW);
   delay(250);
 }
 void space()
@@ -15,9 +14,9 @@ void space()
 
 void dot()
 {
-  digitalWrite(ledpin,HIGH);
+  digitalWrite(led,HIGH);
   delay(250);
-  digitalWrite(ledpin, LOW);
+  digitalWrite(led, LOW);
   delay(250);
 }
 
@@ -26,10 +25,10 @@ char MORSE[][5] = {
 };
 void setup() 
 {
-  pinMode(ledpin,OUTPUT);
+  pinMode(led,OUTPUT);
   Serial.begin(9600);
 }
-
+int comechar = 0;
 void loop() 
 {
   String morse = "";
