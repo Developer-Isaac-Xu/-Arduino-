@@ -7,7 +7,7 @@ void dash()
   digitalWrite(led, LOW);
   delay(250);
 }
-void space()
+void spa()
 {
   delay(3000);
 }
@@ -47,12 +47,9 @@ void loop()
           dot();
         else if (sign == '-')
           dash();
-        Serial.print(sign);
       }
-      //Serial.print(morse);
     }
     else
-    Serial.println();
-    space();
+    spa();
   }
 }
