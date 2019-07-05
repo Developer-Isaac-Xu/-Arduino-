@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 void setup()
 {
   pinMode(5, OUTPUT);
